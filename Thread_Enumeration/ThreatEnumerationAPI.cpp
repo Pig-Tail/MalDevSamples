@@ -4,8 +4,9 @@
 
 /*
     Con estas 3 funciones enumeramos los hilos asociados a un proceso
+
     Thread32First
-    CreateToolhelp32Snapshot --> Crea snapshot de los hilos del sistemas
+    CreateToolhelp32Snapshot --> Crea snapshot de los hilos del sistema
     Thread32Next
 */
 int main() {
@@ -26,6 +27,6 @@ int main() {
 
         CloseHandle(snapshot);
     }
-
+    
     return 0;
 }
