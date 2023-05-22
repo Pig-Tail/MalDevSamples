@@ -26,7 +26,7 @@ int main()
     // Código aquí
     BYTE maliciousCode[] = { /* shellcode */ };
 
-    // Inyectar el bisho en la memoria
+    // Inyectar el bisho en la memoria yeah
     SIZE_T bytesWritten;
     BOOL writeResult = WriteProcessMemory(hProcess, remoteMemory, maliciousCode, sizeof(maliciousCode), &bytesWritten);
     if (!writeResult || bytesWritten != sizeof(maliciousCode))
